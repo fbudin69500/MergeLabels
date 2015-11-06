@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Filtering</category>
+  <title>ThresholdFilter</title>
+  <description>
+   This module apply a threshold on the input image
+  </description>
+  <version>1</version>
+  <documentation-url></documentation-url>
+  <license></license>
+  <contributor>Francois Budin</contributor>
+<acknowledgements>
+</acknowledgements>
+  <parameters>
+    <label>Input/Output</label>
+    <description>Input/output parameters</description>
+    <image type="scalar">
+      <name>inputVolume</name>
+      <label>Input Volume</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description>Input Image</description>
+    </image>
+    <image type="scalar">
+      <name>outputVolume</name>
+      <label>Output Volume</label>
+      <channel>output</channel>
+      <index>1</index>
+      <description>Output Image</description>
+    </image>
+    <integer-vector>
+      <name>labels</name>
+      <label>labels</label>
+      <flag>l</flag>
+      <longflag>labels</longflag>
+      <description>labels</description>
+      <default></default>
+    </integer-vector>
+  </parameters>
+</executable>
+
